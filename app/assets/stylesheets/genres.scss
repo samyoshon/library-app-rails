@@ -1,0 +1,103 @@
+// Place all the styles related to the genres controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#navbar {
+	width: 100%;
+	height: 60px;
+	background-color: #1e1e1e;
+	position: relative;
+}
+
+#home_logo img {
+	height: 28px;
+	position: absolute;
+	padding-top: 17px;
+	margin-left: 20px;
+}
+
+#buttons {
+	float: right;
+	display: inline;
+	width: 200px;
+	height: 60px;
+	padding-top: 17px;
+}
+
+#author_icon img {
+	height: 28px;
+	display: inline;
+	margin-left: 20px;
+}
+
+#book_icon img {
+	height: 28px;
+	display: inline;
+	margin-left: 20px;
+}
+
+#genre_icon img {
+	height: 28px;
+	display: inline;
+	margin-left: 20px;
+}
+
+#home_name {
+	width: auto;
+	font-size: 30px;
+	position: absolute;
+	padding-top: 13px;
+	margin-left: 60px;
+	font-family: 'Yesteryear', cursive;
+	color: #E4E4E4;
+	text-decoration: none;
+}
+
+#title {
+	background-color: #cbd3d1;
+	width: 100%;
+	height: 220px;
+	position: relative;
+	text-align: center;
+	display: block;
+}
+
+#title h1 {
+	font-family: 'Yesteryear', cursive;
+	width: 100%;
+	font-size: 100px;
+	margin-top: 47px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+}
+
+#letters {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: helvetica;
+	font-size: 20px;
+}
+
+#q {
+	font-family: Helvetica;
+}
+
+#search {
+	font-family: Helvetica;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 20px;
+}
+
+ul {
+	font-family: Helvetica;
+}
+
+li #genre_name {
+	text-decoration: none;
+	color: black;
+}

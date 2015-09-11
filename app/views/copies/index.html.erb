@@ -1,0 +1,22 @@
+<link rel="stylesheet" type="text/css" href="/app/assets/images">
+<link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
+
+<body>
+<div id='head'>
+	<%= link_to 'The Library of Sam', home_path , :id => 'logo'%>
+<!-- 	<%= link_to 'Borrow the books, keep the ideas', home_path , :id => 'quote'%> -->
+</div>
+
+	<div id='container'>
+		<div id='onebox'>
+			<%= link_to image_tag('author1.jpg'), authors_path, :class => 'frontimg', :id => 'left' %>
+		</div>
+
+		<div id='twobox'>
+			<%= link_to image_tag('book1.jpg'), books_path, :class => 'frontimg', :id => 'right' %>
+		</div>
+	</div>
+
+</body>
+

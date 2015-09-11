@@ -1,0 +1,21 @@
+<link rel="stylesheet" type="text/css" href="/app/assets/images">
+
+<h1>Individual Book Page - Put Top Layer Here</h1>
+
+<h2><%= @book.title %></h2>
+	
+	<% @authors = @book.authors %>
+	<% @authors.each do |author| %>
+		<h4><%= author.name %></h4>
+	<% end %>
+
+
+
+<h4><%= @book.date %></h4>
+<h4><%= @book.description %></h4>
+
+	<% @genres = @book.genres %>
+	<% @genres.each do |genre| %>
+		<h4><%= genre.name %></h4>
+	<% end %>
+

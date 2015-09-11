@@ -1,0 +1,60 @@
+<link href='https://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
+
+<div id='navbar'>
+	<%= link_to image_tag('library_logo.jpg'), home_path, :id => 'home_logo'%>
+	<%= link_to 'The Library of Sam', home_path, :id => 'home_name'%>
+	<div id='buttons'>
+		<%= link_to image_tag('author_icon.jpg'), authors_path, :id => 'author_icon'%>
+		<%= link_to image_tag('book_icon.jpg'), books_path, :id => 'book_icon'%>
+		<%= link_to image_tag('genre_icon.jpg'), genres_path, :id => 'genre_icon'%>
+	</div>
+</div>
+
+<div id='title'>
+	<h1>Authors</h1>
+</div>
+
+<div id='search'>
+	<%= form_tag("/search", method: "get") do %>
+	  <%= label_tag(:q, "Search for:") %>
+	  <%= text_field_tag(:q) %>
+	  <%= submit_tag("Search") %>
+	<% end %>
+</div>
+
+	<table id='letters'>
+		<tr>
+			<td><%= link_to 'A', authors_path %></td>
+			<td>B</td>
+			<td>C</td>
+			<td>D</td>
+			<td>E</td>
+			<td>F</td>
+			<td>G</td>
+			<td>H</td>
+			<td>I</td>
+			<td>J</td>
+			<td>K</td>
+			<td>L</td>
+			<td>M</td>
+			<td>N</td>
+			<td>O</td>
+			<td>P</td>
+			<td>Q</td>
+			<td>R</td>
+			<td>S</td>
+			<td>T</td>
+			<td>U</td>
+			<td>V</td>
+			<td>W</td>
+			<td>X</td>
+			<td>Y</td>
+			<td>Z</td>
+		</tr>
+	</table>
+
+	<ul>
+	<% @authors.each do |author| %>
+		<li><%= link_to author.name, author_path(author), :id => 'author_name'%></li>
+	<% end %>
+	</ul>
